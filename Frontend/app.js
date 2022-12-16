@@ -30,7 +30,6 @@ document.getElementById("formulario1")
         miInterfaz.subirArchivo(formulrioEnviado);
         miInterfaz.pintarMensaje('Subido','verde-ok', 3000)
         e.preventDefault();
-        miInterfaz.limpiarFormulario();
 
         console.log(titulo,autor, isbn,image);
         //console.log(titulo,autor, isbn);
