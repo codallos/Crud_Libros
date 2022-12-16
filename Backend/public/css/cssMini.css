@@ -1,0 +1,268 @@
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./Frontend/estilos/estilos.css ***!
+  \********************************************************************************/
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: rgb(17, 17, 16);
+    
+    border-radius: 10px;
+
+}
+
+nav div a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+    
+    margin-left: 10px;
+   
+    
+}
+
+
+main{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    gap:10px;
+    
+}
+
+
+
+
+.formulario {
+
+    border-radius: 10px;
+    border: 1px solid rgba(105, 105, 86, 0.363);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.boton, .principal{
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(105, 105, 86, 0.363);
+    
+}
+
+.boton:focus{
+    outline: none;
+    border: 1px solid rgba(53, 47, 146, 0.562);
+    box-shadow: 0 0 3px rgba(53, 47, 146, 0.562);
+}
+
+.principal{
+    background-color: rgb(42, 42, 158);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.principal:hover{
+    background-color: rgb(42, 42, 158);
+    box-shadow: 0 0 7px rgb(52, 33, 156) ;
+    cursor: pointer;
+   
+}
+
+.selector-imagen{
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(42, 42, 158);
+    cursor: pointer;
+    overflow: hidden;
+   
+   
+}
+
+.selector-imagen:hover{
+    background-color: rgb(42, 42, 158);
+    box-shadow: 0 0 7px rgb(52, 33, 156) ;
+    cursor: pointer;
+}
+
+/*.file{
+
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    
+    
+    
+
+}*/
+
+
+
+.file{
+    cursor: pointer;
+    position: absolute;
+    left: -110px;
+    transform: scale(3);
+    color: transparent;
+
+    opacity: 0 ;
+}
+
+
+
+.label-texto{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+
+.label-texto:hover{
+    cursor: pointer;
+}
+
+
+
+.listado-padre{
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /*flex-grow: 1;*/
+    min-width: 600px;
+}
+
+.tarjeta{
+    border: 1px solid rgba(105, 105, 86, 0.363);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.general-info{
+    /*background-color: rgb(192, 113, 113);*/
+    display: flex;
+}
+
+.imagen-libro{
+    
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.final-imagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.informacion{
+    padding-top: 10px;
+    /*border: 5px solid #000;*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.titulo{
+    /*background-color: aqua;*/
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+    font-weight: bold;
+}
+
+.autor-ok{
+    /*background-color: azure;*/
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boton-eliminar-contenedor{
+    /*background-color: blueviolet;*/
+    display: flex;
+    padding-left: 5px;
+}
+
+.x{
+    background-color: rgb(190, 49, 49);
+    display: inline;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.tiempo-atras {
+    background-color: rgba(115, 101, 128, 0.5);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+.mensaje-script{
+    
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.red-ok{
+    
+    background-color: rgba(247, 39, 39, 0.342);
+    color: brown;
+    /*margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;*/
+
+}
+
+
+.verde-ok{
+
+    background-color: rgba(39, 247, 74, 0.342);
+    color: rgb(22, 87, 48);
+
+}
+
+.prueba{
+    background-color: rgba(0, 255, 255, 0.185);
+    color: white;
+    padding: 5px;
+}

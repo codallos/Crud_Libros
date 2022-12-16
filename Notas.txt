@@ -1,0 +1,38 @@
+#Comandos node
+npm init -y --> Crea el archivo package.json: el cual describe el proyecto y todo lo que se necesita
+npm i nodemon --> Instala como dependencia principal
+npm i nombremodulo -D -->Instala dependencias como desarrollador
+
+
+agregamos la siguiente linea de codigo al archivo "package.json":
+"cross-env NODE_ENV=development nodemon Backend/index.js --ignore Frontend",
+"start": "cross-env NODE_ENV=production node backend/index.js",
+"build": "cross-env NODE_ENV=production webpack" --> mimificar codigo js css y html
+
+de esta forma podemos ejecutar (son como tipo alias en linux):
+
+npm dev y npm start
+
+#Dependencias para fronted
+npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D
+
+
+
+nodemon Backend/index.js --> Modulo para reiniciar el servidor automaticamente en lugar de usar solo "node nombrearchivoservidor.js"
+npx nodemon Backend/index.js --> Por si el comando anterior no funciona ya que nodemon no se instala en todo el sistema operativo.
+sudo service mongod start --> Inicia mongodb como servicio
+
+
+
+
+#paquetes node:
+express --> Sirve para inicializarun servidor
+mongoose -->para conectarse a base de datos mongodb
+morgan --> permite ver las peticiones que llegan al sevidor por consola
+multer --> para subir archivos como imagenes
+dotenv -->paratrabajar conlas variables de entorno.
+cross-env --> nos permite definir en que entorno nos encontramos "produccion o desarrollo"
+cors --> comunicacion entre dos servicores (cuando se tiene diferente dominio)
+fs-extra --> manejo de archivos con funciones adicionales
+nodemon --> Modulo para reiniciar el servidor
+
