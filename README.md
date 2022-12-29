@@ -7,4 +7,4 @@ Aplicación donde se hace uso de:
 * Npm
 * Javascript
 * Html
-* Css
+* Css, etc
