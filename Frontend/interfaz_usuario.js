@@ -28,16 +28,17 @@ class interfaz{
                     <div class="informacion">
                         <div class="titulo"> ${jsonArchivo.titulo}</div>
                         <div class="autor-ok">${jsonArchivo.autor}</div>
-                        <div class="boton-eliminar-contenedor">
-                           
-                            <a href="#" class="x" id="${jsonArchivo._id}">X</a>
-                        </div>
                     </div>
-
+                        
                 </div>
-                
-                <div class="tiempo-atras">
-                    ${format(jsonArchivo.fechaCreacion)}
+                <div class="parte-baja-contenedor">
+                    <div class="tiempo-atras">
+                        ${format(jsonArchivo.fechaCreacion)}
+                    </div>
+                        
+                    <div class="boton-eliminar-contenedor">  
+                        <a href="#" class="x" id="${jsonArchivo._id}">Eliminar</a>
+                    </div>
                 </div>
             
             

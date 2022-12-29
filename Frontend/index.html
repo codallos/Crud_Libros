@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  <link rel="stylesheet" href="./estilos/estilos.css"> 
     <title>Full</title>
 </head>
 <body>
         <nav>
             <div class="cointener" id="navegacion">
-                <a href="#">Books</a>
+                <a href="#">Libros</a>
             </div>
         </nav>
         <main>
@@ -18,9 +18,9 @@
                <!--<div class="red-ok verde-ok mensaje-script"> Subido </div>-->
 
                 <div class="formulario">
-                    <input type="text" placeholder="Titulo" class="boton" id="titulo">
-                    <input type="text" placeholder="Autor" class="boton" id="Autor">
-                    <input type="text" placeholder="ISBN" class="boton" id="isbn">
+                    <input type="text" placeholder="Titulo" class="boton" id="titulo" required>
+                    <input type="text" placeholder="Autor" class="boton" id="Autor" required>
+                    <input type="text" placeholder="ISBN" class="boton" id="isbn" required>
                     <div class="selector-imagen" >
                         <label  class="label-texto" id="select-archivi"> Escoge una imagen</label>
                         <input type="file" name="image" class="file" id="image" required>
@@ -32,7 +32,7 @@
             </form>
             
             <div class="listado-padre" id="listado">
-                <!--
+                <!-- 
                 <div class="tarjeta">
 
                     <div class="general-info">
@@ -45,18 +45,23 @@
                             <div class="titulo"> Titulo</div>
                             <div class="autor-ok">Autor</div>
 
-                            <div class="boton-eliminar-contenedor">
-                                <div class="x">X</div>
-                            </div>
                         </div>
                     </div>
-                    <div class="tiempo-atras">
-                        23 horas atras
-                    </div>
-                    
-                </div>
+                    <div class="parte-baja-contenedor">
 
+                        <div class="tiempo-atras">
+                            23 horas atras
+                        </div>
+                        
+                        <div class="boton-eliminar-contenedor">
+                            <div class="x">Eliminar</div>
+                        </div>
+                    </div>
+                </div>
                 -->
+
+
+                
             </div>
                 
 

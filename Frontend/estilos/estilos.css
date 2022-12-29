@@ -1,12 +1,15 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+   
 }
 
 nav{
     background-color: rgb(17, 17, 16);
     
-    border-radius: 10px;
+padding: 15px;
 
 }
 
@@ -23,9 +26,11 @@ nav div a{
 
 main{
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 20px;
     gap:10px;
+    padding: 15px;
     
 }
 
@@ -45,7 +50,7 @@ main{
 
 .boton, .principal{
     font-size: 1rem;
-    padding: 5px;
+    padding: 12px 6px 12px 6px;
     border-radius: 5px;
     border: 1px solid rgba(105, 105, 86, 0.363);
     
@@ -62,6 +67,8 @@ main{
     color: white;
     border: none;
     cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -73,7 +80,8 @@ main{
 }
 
 .selector-imagen{
-    padding: 5px;
+    padding-top:  11px;
+    padding-bottom: 11px;
     border-radius: 5px;
     position: relative;
     text-align: center;
@@ -132,6 +140,7 @@ main{
     font-size: 1rem;
     cursor: pointer;
     text-overflow: ellipsis;
+ 
 }
 
 
@@ -147,7 +156,7 @@ main{
     flex-direction: column;
     gap:10px;
     /*flex-grow: 1;*/
-    min-width: 600px;
+    /*min-width: 600px;*/
 }
 
 .tarjeta{
@@ -162,12 +171,13 @@ main{
 .general-info{
     /*background-color: rgb(192, 113, 113);*/
     display: flex;
+    flex-direction: column;
 }
 
 .imagen-libro{
     
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +195,7 @@ main{
 }
 
 .informacion{
-    padding-top: 10px;
+    padding-top: 0px;
     /*border: 5px solid #000;*/
     display: flex;
     justify-content: space-between;
@@ -209,15 +219,19 @@ main{
     padding-bottom: 5px;
 }
 
+.parte-baja-contenedor{
+    display: flex;
+}
+
 .boton-eliminar-contenedor{
     /*background-color: blueviolet;*/
     display: flex;
-    padding-left: 5px;
+    
 }
 
 .x{
     background-color: rgb(190, 49, 49);
-    display: inline;
+    
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -228,6 +242,7 @@ main{
     background-color: rgba(115, 101, 128, 0.5);
     padding: 10px;
     font-size: 1rem;
+    flex-grow: 1;
 }
 
 
@@ -262,4 +277,26 @@ main{
     background-color: rgba(0, 255, 255, 0.185);
     color: white;
     padding: 5px;
+}
+
+@media (min-width:550px){
+    main {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .formulario{
+        min-width:450px;
+        max-width: 600px;
+    }
+
+    .listado-padre{
+        min-width: 450px;
+        max-width: 450px;
+    }
+
+
 }
