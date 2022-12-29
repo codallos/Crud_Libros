@@ -155,8 +155,14 @@ main{
     display: flex;
     flex-direction: column;
     gap:10px;
+    transition: 0.2s;
     /*flex-grow: 1;*/
     /*min-width: 600px;*/
+}
+
+.oculto {
+
+    display: none;
 }
 
 .tarjeta{
