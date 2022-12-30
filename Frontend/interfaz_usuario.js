@@ -9,10 +9,20 @@ class interfaz{
     async pintarArchivo(){
 
         const jasonConListadoArchivos = await peticion.obtenLibros();
-        //console.log(jasonConListadoArchivos);
+        console.log(jasonConListadoArchivos);
+
+
 
         const contenedorListado = document.getElementById('listado')
         contenedorListado.innerHTML = ''; // Vaciamos el contenbedor
+
+        if (jasonConListadoArchivos === {}) {
+
+            console.log("Vacio");
+            contenedorListado.className += " oculto"
+            
+
+        }
 
         jasonConListadoArchivos.forEach(jsonArchivo => {
 
@@ -23,7 +33,7 @@ class interfaz{
 
                 <div class="general-info">
                     <div class="imagen-libro">
-                        <img src="${jsonArchivo.rutaAudio}" alt="mi imagen" class="final-imagen">
+                        <img src="${jsonArchivo.rutaAudio}" alt="mi imagen" class="final-imagen" loading="lazy">
                     </div>
                     <div class="informacion">
                         <div class="titulo"> ${jsonArchivo.titulo}</div>
