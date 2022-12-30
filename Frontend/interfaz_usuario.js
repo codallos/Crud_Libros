@@ -97,14 +97,10 @@ class interfaz {
             const resultado = document.getElementById("image").files[0];
             const nombreArchivoOk = resultado.name;
 
-            if (nombreArchivoOk === "") {
-                document.getElementById("select-archivi").innerHTML = 'Escoge una imagen';
-                
-            }else{
 
-                document.getElementById("select-archivi").innerHTML = nombreArchivoOk;
+            document.getElementById("select-archivi").innerHTML = nombreArchivoOk;
 
-            }
+            
 
             
 
