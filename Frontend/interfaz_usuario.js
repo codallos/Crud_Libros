@@ -91,21 +91,11 @@ class interfaz {
     }
 
     contadorArchivosSeleccionados() {
-        //const resultado = document.getElementById('image').files[0]
-        const resultado = document.getElementById("image");
-        resultado.addEventListener("change", () => {
-            const resultado = document.getElementById("image").files[0];
-            const nombreArchivoOk = resultado.name;
 
-
-            document.getElementById("select-archivi").innerHTML = nombreArchivoOk;
-
-            
-
-            
-
-            console.log(resultado.name);
-        });
+        const resultado = document.getElementById("image").files[0];
+        const nombreArchivoOk = resultado.name;
+        document.getElementById("select-archivi").innerHTML = nombreArchivoOk;
+       
 
         /* if (console.log(resultado !== undefined)){
             document.getElementById('select-archivi').innerHTML = "OK seleccionado"
