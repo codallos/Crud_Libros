@@ -300,7 +300,7 @@ main{
     }
 
     .listado-padre{
-        min-width: 450px;
+        min-width: 0px;
         max-width: 450px;
     }
 

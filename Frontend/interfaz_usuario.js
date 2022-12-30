@@ -50,13 +50,13 @@ class interfaz{
 
             contenedorListado.appendChild(div); //agregamos los div crados;
 
-            if (jasonConListadoArchivos.length === 0) {
+           /* if (jasonConListadoArchivos.length === 0) {
 
                 console.log("Vacio");
                 contenedorListado.className += " oculto"
                 
     
-            }
+            }*/
         });
         
         
