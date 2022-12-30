@@ -16,7 +16,7 @@ class interfaz{
         const contenedorListado = document.getElementById('listado')
         contenedorListado.innerHTML = ''; // Vaciamos el contenbedor
 
-        if (jasonConListadoArchivos === {}) {
+        if (jasonConListadoArchivos.length === 0) {
 
             console.log("Vacio");
             contenedorListado.className += " oculto"
