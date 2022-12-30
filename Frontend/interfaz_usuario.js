@@ -16,13 +16,7 @@ class interfaz{
         const contenedorListado = document.getElementById('listado')
         contenedorListado.innerHTML = ''; // Vaciamos el contenbedor
 
-        if (jasonConListadoArchivos.length === 0) {
 
-            console.log("Vacio");
-            contenedorListado.className += " oculto"
-            
-
-        }
 
         jasonConListadoArchivos.forEach(jsonArchivo => {
 
@@ -55,6 +49,14 @@ class interfaz{
             `;
 
             contenedorListado.appendChild(div); //agregamos los div crados;
+
+            if (jasonConListadoArchivos.length === 0) {
+
+                console.log("Vacio");
+                contenedorListado.className += " oculto"
+                
+    
+            }
         });
         
         
