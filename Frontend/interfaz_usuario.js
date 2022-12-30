@@ -66,6 +66,7 @@ class interfaz {
 
     limpiarFormulario() {
         document.getElementById("formulario1").reset();
+        document.getElementById("select-archivi").innerHTML = 'Escoge una imagen';
     }
 
     async eliminarArchivo(id) {
